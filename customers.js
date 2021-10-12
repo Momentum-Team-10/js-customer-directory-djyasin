@@ -23,12 +23,12 @@ const customers = [
         description: 'Brazil, Buenos Aires, Georgetown'
       }
     },
-    email: 'sophia.burns@example.com',
-    dob: {
+    "email": "sophia.burns@example.com",
+    "dob": {
       date: '1990-07-28T13:05:47.042Z',
       age: 30
     },
-    registered: {
+    "registered": {
       date: '2012-03-09T06:54:45.213Z',
       age: 8
     },
@@ -41,7 +41,7 @@ const customers = [
     picture: {
       large: 'https://randomuser.me/api/portraits/women/62.jpg',
       medium: 'https://randomuser.me/api/portraits/med/women/62.jpg',
-      thumbnail: 'https://randomuser.me/api/portraits/thumb/women/62.jpg'
+      "thumbnail": 'https://randomuser.me/api/portraits/thumb/women/62.jpg'
     },
     nat: 'US'
   },
