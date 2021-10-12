@@ -5,7 +5,7 @@ container.classList.add("uk-container-large", "uk-flex", "uk-flex-between");
 
 for (let customer of customers) {
 const customerCard = document.createElement("div");
-customerCard.id = `${customer.id}`;
+customerCard.id = `${customer.id.value}`;
 container.appendChild(customerCard);
 customerCard.classList.add(
   "uk-card",
@@ -19,8 +19,9 @@ customerCard.innerHTML = `
 }
 <img src=${customer.thumbnail}/>
  <p>${customer.email}</p>
- <p>$${customer.age}</p>
- <p>${customer.location}</p>
+ <p>${customer.age}</p>
+ <p>${customer.location.street}</p>
+ <p>${customer.location.street.number}</p>
  
 `;
 }

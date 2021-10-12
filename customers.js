@@ -1,6 +1,6 @@
 const customers = [
   {
-    name: {
+    "name": {
       title: 'dr',
       first: 'sophia',
       last: 'burns'
