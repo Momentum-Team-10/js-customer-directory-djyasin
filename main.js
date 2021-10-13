@@ -11,11 +11,9 @@ for (let customer of customers) {
     "uk-card",
     "uk-card-body",
     "uk-card-default",
-    "uk-width-medium"
-  );
+    "uk-width-medium");
   customerCard.innerHTML = `
-  <p class="uk-card-title" style="color: red !important; padding: 15px">${customer.name}
-<img src=${customer.thumbnail}/>
+<img src=${customer.picture.thumbnail} />
 <p><h3>${customer.name.first}</h3></p>
 <p><h3>${customer.name.last}</h3></p>
 <p>${customer.email}</p>

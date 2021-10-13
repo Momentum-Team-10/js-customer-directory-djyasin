@@ -13,10 +13,12 @@ body {
     align-items: center;
     justify-content: center;
     //font-family: Oswald, sans-serif;
+    padding: 400px;
 }
 #container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-direction: wrap;
     justify-items: center;
     align-items: center;
     //font-family: Oswald, sans-serif;
