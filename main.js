@@ -15,8 +15,8 @@ customerCard.classList.add(
   customerCard.innerHTML = `
 
 <img src=${customer.picture.thumbnail} />
-<p><h3>${customer.name.first}</h3></p>
-<p><h3>${customer.name.last}</h3></p>
+<p><h3>${capitalizeFirstLetter(customer.name.first)}</h3></p>
+<p><h3>${capitalizeFirstLetter(customer.name.last)}</h3></p>
 <p>${customer.email}</p>
 <p>${customer.location.street.number}</p>
 <p>${customer.location.street.name}</p> 
@@ -27,13 +27,8 @@ customerCard.classList.add(
 <p>Customer Since: ${moment(customer.registered.date).format("MMM D, YYYY")}</p>
 `;
 }
-//let customer = customers[0];
-//console.log(customer);
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
 
-//let date = moment().format("MMM Do YY"); 
-
-//for (let i = 0; i < 3; i++) {
- // customer.registered.date;
-//  let date = moment().format("MMM Do YY"); 
-
-//}
+//investigate border radius for thumbnail
