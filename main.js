@@ -23,17 +23,17 @@ customerCard.classList.add(
 <p>${customer.location.city}</p>
 <p>${customer.location.state}</p>
 <p>${customer.location.postcode}</p>
-<p>DOB: ${customer.dob.age}</p>
-<p>Customer Since: ${customer.moment}</p>
+<p>DOB: ${moment(customer.dob.age).format("MMM D, YYYY")}</p>
+<p>Customer Since: ${moment(customer.registered.date).format("MMM D, YYYY")}</p>
 `;
 }
-let customer = customers[0];
-console.log(customer);
+//let customer = customers[0];
+//console.log(customer);
 
-let date = moment().format("MMM Do YY"); 
+//let date = moment().format("MMM Do YY"); 
 
-for (let i = 0; i < 3; i++) {
-  customer.registered.date;
-  let date = moment().format("MMM Do YY"); 
+//for (let i = 0; i < 3; i++) {
+ // customer.registered.date;
+//  let date = moment().format("MMM Do YY"); 
 
-}
+//}
