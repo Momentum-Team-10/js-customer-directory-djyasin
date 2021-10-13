@@ -1,6 +1,6 @@
 body { 
-   // background-color: aquamarine;
-  //  color:purple;
+  // background-color: aquamarine;
+   //color:purple;
 
 }
 * {
@@ -13,13 +13,18 @@ body {
     align-items: center;
     justify-content: center;
     //font-family: Oswald, sans-serif;
-    padding: 400px;
 }
 #container {
     display: flex;
-    flex-direction: row;
-    flex-direction: wrap;
-    justify-items: center;
-    align-items: center;
-    //font-family: Oswald, sans-serif;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 400px;
+        height: 500px;
+        justify-items: center;
+        justify-content: center;
+        font-family: Oswald, sans-serif;
+        font-size: 30px;
+        color: whitesmoke;
 }
