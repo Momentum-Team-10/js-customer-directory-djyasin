@@ -1,23 +1,18 @@
 const root = document.getElementById("root");
-const container = document.createElement("div");
+const container = document.createElement("containerDisplay");
 root.appendChild(container);
-container.classList.add(
-  "uk-container-large",
-  "uk-flex",
-  "uk-flex-between",
-  "uk-form-icon"
-);
+container.classList.add("uk-container-large", "uk-flex", "uk-flex-between", "uk-form-icon");
 
 for (let customer of customers) {
-  const customerCard = document.createElement("div");
+  const customerCard = document.createElement("customer");
   customerCard.id = `${customer.id.value}`;
   container.appendChild(customerCard);
-  customerCard.classList.add(
-    "uk-card",
-    "uk-card-body",
-    "uk-card-default",
-    "uk-width-medium"
-  );
+customerCard.classList.add(
+ "uk-card",
+  "uk-card-body",
+  "uk-card-default",
+  "uk-width-medium");
+
   customerCard.innerHTML = `
 
 <img src=${customer.picture.thumbnail} />
